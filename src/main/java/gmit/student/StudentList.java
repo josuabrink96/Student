@@ -16,4 +16,13 @@ public class StudentList {
     public ArrayList<Student> getStudentList() {
         return studentList;
     }
+
+    public Student findStudent(String name) {
+        for(Student s : studentList) {
+            if(s.getName().equals(name)) {
+                return s;
+            }
+        }
+        return null;
+    }
 }
